@@ -49,16 +49,19 @@ function draw() {
   textSize(120);
   fill(map2,100,100);
   stroke(0);
-  strokeWeight(4);
-  text(prevDigitPi + " " + "[" + digitPi + "] " + nextNextDigitPi, windowWidth/2, height/2.5);
+  strokeWeight(10);
+  text(prevDigitPi + " " + "[" + digitPi + "] " + nextNextDigitPi, windowWidth/2,(height)/4);
   //text(moment().format("S"),windowWidth/2, 200);
   //text(map1 + " " + map2,windowWidth/2, 300);
   textSize(48);
+  fill(0);
   strokeWeight(2);
-  text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"),windowWidth/2, 500);
+  text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"),windowWidth/2, height/2);
   textSize(24);
-  text("every minute we step through a digit of pi until next pi day",windowWidth/2, 600);
+  noStroke();
 
-  text(minutesToPiDay + " minutes to go!",windowWidth/2, 650);
+  text("every minute we step through a digit of pi until next pi day",windowWidth/2, (3*height)/4);
+
+  text(minutesToPiDay + " minutes to go!", windowWidth/2,(3.3  *height)/4);
 
 }
